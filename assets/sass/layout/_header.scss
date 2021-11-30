@@ -1,0 +1,28 @@
+.header{
+    &__title{
+        color: white;
+        font-family: $playfair;  
+        margin: 0 auto;      
+        text-shadow: 0 3px 6px rgba(0,0,0,.2);
+        font-size: $xx-large;
+        max-width: 60%;
+        @media( max-width:480px ){
+            margin: 30% auto 60%;
+            max-width: 100%;
+            font-size: 3rem;
+        }
+    }
+    &__icon{
+        color: $white;
+        display: block;
+ 
+    
+    }
+}
+
+.hero{
+    background-image:url(/assets/img/post-image.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    align-items: center;
+}

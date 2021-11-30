@@ -1,5 +1,5 @@
 // Vendors
-@import 'vendors/scss/bootstrap';
+@import 'vendors/bootstrap-4.6.1/bootstrap';
 
 // Abstracts
 @import 'abstracts/variables';
@@ -7,6 +7,15 @@
 // Base
 @import 'base/reset';
 @import 'base/typography';
+
+// Layout
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/article';
+@import 'layout/navbar';
+@import 'layout/_pagination';
+
+
 
 // Components
 @import 'components/buttons';

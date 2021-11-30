@@ -1,0 +1,16 @@
+.navbar{
+    background-color: $eerie-black;
+    
+}   
+
+.navbar__logo{
+    max-width: 120px;
+
+}
+
+.navbar__link{
+        color: $white;
+        &--active{
+            color: $spanish-pink;
+        }
+}
