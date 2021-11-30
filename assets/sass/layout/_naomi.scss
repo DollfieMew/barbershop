@@ -1,0 +1,53 @@
+.naomi{
+    border-top: 1px solid $platinum;
+    border-bottom: 1px solid $platinum;
+    padding-top: 1.5em;
+    &__bio{
+        display: flex;
+        align-items: center;
+        @media( max-width:480px ){
+            display: block;
+            text-align: center;
+        }
+    }
+    &__photo{
+        padding: 1em 1em 1em 0;
+        @media( max-width:480px ){
+            padding: 0 1em;
+        }
+        figure{
+            @media( max-width:480px ){
+                margin-bottom: 0;
+            }
+        }
+        img{
+            border: 1px solid $platinum;
+            @media( max-width:480px ){
+                max-width: 50%;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__contact{
+        
+        @media( max-width:480px ){
+            padding: 1em;
+        }
+        h2{
+            font-family: $playfair;
+            white-space: nowrap;
+            color: $eerie-black;
+        }
+        p{
+            margin: 0;
+            color: $fuzzy-wuzzy;
+            font-weight: $light;
+        }
+    }
+    &__text{
+        margin-top: 5em;
+        margin-left: 3em;
+        font-size: .9rem;
+        color: $nickel;
+    }
+}

@@ -5,7 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9980,13 +9980,17 @@ footer {
 .header__icon {
   color: #fff;
   display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .hero {
-  background-image: url(/assets/img/post-image.jpg);
+  background-image: url(../../assets/img/post-image.jpg);
   background-size: cover;
   min-height: 90vh;
   align-items: center;
+  position: relative;
 }
 
 .article {
@@ -10018,7 +10022,7 @@ footer {
   color: #6C6E70;
 }
 .article__buttons .medium-button {
-  margin-right: 15px;
+  margin-right: 2px;
 }
 @media (max-width: 480px) {
   .article__buttons {
@@ -10029,11 +10033,9 @@ footer {
 .navbar {
   background-color: #121619;
 }
-
 .navbar__logo {
   max-width: 120px;
 }
-
 .navbar__link {
   color: #fff;
 }
@@ -10065,9 +10067,71 @@ footer {
   border-top-right-radius: 15.25rem !important;
   border-bottom-right-radius: 15.25rem !important;
 }
+.paginator .pagination .page-link {
+  color: #222323;
+}
 .paginator .pagination .page-link:hover {
   background-color: #222323;
   color: #fff;
+}
+
+.naomi {
+  border-top: 1px solid #E6E7E7;
+  border-bottom: 1px solid #E6E7E7;
+  padding-top: 1.5em;
+}
+.naomi__bio {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .naomi__bio {
+    display: block;
+    text-align: center;
+  }
+}
+.naomi__photo {
+  padding: 1em 1em 1em 0;
+}
+@media (max-width: 480px) {
+  .naomi__photo {
+    padding: 0 1em;
+  }
+}
+@media (max-width: 480px) {
+  .naomi__photo figure {
+    margin-bottom: 0;
+  }
+}
+.naomi__photo img {
+  border: 1px solid #E6E7E7;
+}
+@media (max-width: 480px) {
+  .naomi__photo img {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .naomi__contact {
+    padding: 1em;
+  }
+}
+.naomi__contact h2 {
+  font-family: "Playfair Display", serif;
+  white-space: nowrap;
+  color: #121619;
+}
+.naomi__contact p {
+  margin: 0;
+  color: #E56353;
+  font-weight: 300;
+}
+.naomi__text {
+  margin-top: 5em;
+  margin-left: 3em;
+  font-size: 0.9rem;
+  color: #6C6E70;
 }
 
 .btn {
